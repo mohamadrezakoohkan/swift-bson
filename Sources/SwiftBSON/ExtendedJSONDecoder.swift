@@ -3,6 +3,7 @@ import Foundation
 import NIO
 
 /// `ExtendedJSONDecoder` facilitates the decoding of ExtendedJSON into `Decodable` values.
+@available(iOS 11.0, *)
 public class ExtendedJSONDecoder {
     internal static var extJSONDateFormatterSeconds: ISO8601DateFormatter = {
         let formatter = ISO8601DateFormatter()
