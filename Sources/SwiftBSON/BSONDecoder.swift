@@ -1,6 +1,7 @@
 import Foundation
 
 /// `BSONDecoder` facilitates the decoding of BSON into semantic `Decodable` types.
+@available(iOS 11.0, *)
 public class BSONDecoder {
     internal static var iso8601Formatter: ISO8601DateFormatter = {
         let formatter = ISO8601DateFormatter()
